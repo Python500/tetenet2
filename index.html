@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tete Net Browser</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+  <div id="splash-screen">
+    <div class="splash-content">
+      <img src="./ChatGPT Image Apr 21, 2025, 06_18_49 PM.png" alt="Tete Browser Logo" id="splash-logo">
+      <h1>Tete Net</h1>
+      <p>Loading...</p>
+      <!-- Spinner Element -->
+      <div id="spinner" class="spinner"></div>
+      <!-- Progress Bar -->
+      <div id="progress-bar" class="progress-bar">
+        <div id="progress-bar-fill" class="progress-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+  
+  <header>
+    <div id="logo">🧭 Tete Browser</div>
+    <div class="tab-bar" id="tab-bar"></div>
+    <div id="new-tab-btn" onclick="createNewTab()">➕</div>
+    <div class="controls">
+      <button onclick="goBack()">⬅️</button>
+      <button onclick="goForward()">➡️</button>
+      <button onclick="reloadPage()">🔄</button>
+    </div>
+    <!-- User Profile Picture Section -->
+    <div id="user-profile" class="user-profile" onclick="openUserProfile()">
+      <img src="placeholder-profile.png" alt="please log in" id="profile-pic" />
+    </div>
+    
+  </header>
+  
+
+  <input type="text" id="address-bar" placeholder="Search or enter URL" onkeydown="handleKey(event)" />
+
+  <!-- Browser Window to Load Websites -->
+<div id="browser-window">
+  <iframe id="browser-frame" src="" frameborder="0"></iframe>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -66,7 +66,7 @@ function closeTab(tabId) {
   }
 }
 
-function createNewTab(url = 'https://www.google.com') {
+function createNewTab(url = 'https://www.ghanaweb.com') {
   const id = Date.now().toString();
   const tabElement = document.createElement('div');
   tabElement.className = 'tab';
@@ -135,6 +135,7 @@ function showColorPicker(tabElement) {
 window.onload = function() {
   document.body.classList.add('loaded');
 };
+
 window.onload = function() {
   // Start the progress bar and spinner animation
   simulateLoading();
@@ -236,4 +237,6 @@ document.getElementById('search-bar').addEventListener('keydown', function(event
     document.getElementById('search-container').style.display = 'none';
   }
 });
+
+
 
